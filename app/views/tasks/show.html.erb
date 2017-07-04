@@ -1,0 +1,5 @@
+<h1><%= @task.name %></h1>
+<p>Created at: <%= @task.created_at %></p>
+<%= link_to("Edit this task", "tasks/#{task.id}/edit") %>
+<%= link_to("Delete this task", "tasks/#{task.id}", method: "delete") %>
+<%= link_to("See all tasks", "/tasks") %>
